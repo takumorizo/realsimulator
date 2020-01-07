@@ -1,0 +1,8 @@
+== install ==
+cd /home/moriyama/sftp_scripts/180202_SiMHaT/src/RealSimulationUtil && \
+python setup.py build && \
+python setup.py install --record files.txt --prefix=~/local/
+
+== uninstall ==
+cd /home/moriyama/sftp_scripts/180202_SiMHaT/src/RealSimulationUtil && \
+cat files.txt | xargs rm -rf
